@@ -1,10 +1,8 @@
 const fs = require('fs')
 const path = require('path')
 
-// Ścieżka do pliku z danymi kontaktów
 const contactsPath = path.join(__dirname, 'db', 'contacts.json')
 
-// Funkcja zwracająca listę wszystkich kontaktów
 function listContacts() {
     try {
         const contactsData = fs.readFileSync(contactsPath, 'utf-8')
@@ -16,7 +14,6 @@ function listContacts() {
     }
 }
 
-// Funkcja znajdująca kontakt o podanym ID
 function getContactById(contactId) {
     try {
         const contactsData = fs.readFileSync(contactsPath, 'utf-8')
@@ -29,7 +26,6 @@ function getContactById(contactId) {
     }
 }
 
-// Funkcja usuwająca kontakt o podanym ID
 function removeContact(contactId) {
     try {
         const contactsData = fs.readFileSync(contactsPath, 'utf-8')
@@ -43,7 +39,6 @@ function removeContact(contactId) {
     }
 }
 
-// Funkcja dodająca nowy kontakt
 function addContact(name, email, phone) {
     try {
         const contactsData = fs.readFileSync(contactsPath, 'utf-8')
@@ -60,5 +55,4 @@ function addContact(name, email, phone) {
     }
 }
 
-// Eksport funkcji do użycia w innych plikach
 module.exports = { listContacts, getContactById, removeContact, addContact }

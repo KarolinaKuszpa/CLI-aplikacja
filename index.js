@@ -1,13 +1,11 @@
-//const argv = require('yargs').argv
-//const {
-//  listContacts,
-// getContactById,
-//removeContact,
-//addContact,
-//} = require('./contacts')
-
 const { Command } = require('commander')
 const program = new Command()
+const {
+    listContacts,
+    getContactById,
+    removeContact,
+    addContact,
+} = require('./contacts')
 program
     .option('-a, --action <type>', 'choose action')
     .option('-i, --id <type>', 'user id')

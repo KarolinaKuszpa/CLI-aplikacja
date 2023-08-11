@@ -1,15 +1,28 @@
 {
-  "name": "cli-aplikacja",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "start:dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarolinaKuszpa/CLI-aplikacja.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarolinaKuszpa/CLI-aplikacja/issues"
+  },
+  "homepage": "https://github.com/KarolinaKuszpa/CLI-aplikacja#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "name": "cli-aplikacja"
 }
